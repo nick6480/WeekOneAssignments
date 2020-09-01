@@ -1,3 +1,4 @@
+"use strict"
 
 let tails = 0;
 let heads = 0;
@@ -15,7 +16,7 @@ function coinfilp() {
   }
 }
 
-coinfilp()
+coinfilp();
 
 console.log('heads: ' + heads);
 console.log('tails: ' + tails);
