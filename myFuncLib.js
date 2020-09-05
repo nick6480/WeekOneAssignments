@@ -19,14 +19,22 @@ console.log(play());
 
 // Assignment JS Funcs 3.
 
-let fahrenheit = Number(prompt('Temperatur in fahrenheit'));
-let celsius;
-
-console.log(celsius = 5/9 + (fahrenheit-32));
-
+// Temperatures
+let celsius = 25;
+let fahrenheit  = 66;
 
 
-let celsius2 = Number(prompt('Temperatur in celsius'));
-let fahrenheit2;
+// Converts celsius to fahrenheit
+function C2F(c) {
+  return Math.floor(c * 9 / 5 + 32);
+};
 
-console.log(celsius = 5/9 + (fahrenheit+32));
+console.log(`${fahrenheit} F = ${C2F(celsius)} C`);
+
+
+// Converts fahrenheit to celsius
+function F2C(f) {
+  return Math.floor(5 / 9 * (f - 32));
+};
+
+console.log(`${celsius} C = ${F2C(fahrenheit)} F`);
